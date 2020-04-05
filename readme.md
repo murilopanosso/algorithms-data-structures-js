@@ -14,3 +14,5 @@
 >Sub Array Sum Equals K<br />
 >Vowels<br />
 >Fibonacci<br />
+>Queue<br />
+>Stack<br />
