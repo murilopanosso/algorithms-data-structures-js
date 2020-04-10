@@ -359,3 +359,26 @@ describe('insert at', () => {
     })
 });
 
+describe('for...of loops with generator function' ,() => {
+    test('iterates through linked list', () => {
+        const list = new LinkedList();
+        list.insertLast(10);
+        list.insertLast(2);
+        list.insertLast(63);
+        list.insertLast(47);
+        list.insertLast(60);
+        list.insertLast(48);
+        list.insertLast(8);
+
+        for (let node of list) {
+            node.data += 10;
+        }
+        expect(list.getAt(0).data).toEqual(20);
+        expect(list.getAt(1).data).toEqual(12);
+        expect(list.getAt(2).data).toEqual(73);
+        expect(list.getAt(3).data).toEqual(57);
+        expect(list.getAt(4).data).toEqual(70);
+        expect(list.getAt(5).data).toEqual(58);
+        expect(list.getAt(6).data).toEqual(18);
+    })
+})

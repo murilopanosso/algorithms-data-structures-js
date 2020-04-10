@@ -119,6 +119,26 @@ class LinkedList{
         const node = new Node(element, prevNode.next);
         prevNode.next = node;
     }
+
+    forEach(callBack) {
+        let node = this.head;
+        let counter = 0;
+        while(node) {
+            callBack(node, counter);
+            node = node.next;
+            counter++;
+        }
+    }
+
+    *[Symbol.iterator]() {
+        let node = this.head;
+        while(node) {
+            yield node;
+            node = node.next;
+        }
+    }
+
+
 }
 
 module.exports = {Node, LinkedList};
