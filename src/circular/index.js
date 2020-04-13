@@ -1,7 +1,8 @@
 
+//return true if the list circular, false if its not
 const circular = (list) => {
     let slow = list.getFirst();
-    let fast = list.getFirst;
+    let fast = list.getFirst();
 
     while(fast.next && fast.next.next) {
         slow = slow.next;

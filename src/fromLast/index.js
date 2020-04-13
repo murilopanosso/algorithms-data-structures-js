@@ -1,3 +1,5 @@
+//Given a Linked List and an integer N, 
+//Return the element N spaces from the last node 
 const fromLast = (list, n) => {
     let slow = list.getFirst();
     let fast = list.getFirst();

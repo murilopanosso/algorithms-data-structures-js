@@ -16,3 +16,9 @@
 >Fibonacci<br />
 >Queue<br />
 >Stack<br />
+>LinkedList<br />
+>Tree<br />
+>Binary Search Tree<br />
+>Bubble Sort<br />
+>Selection Sort<br />
+>Merge Sort<br />
